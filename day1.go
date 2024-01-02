@@ -25,4 +25,13 @@ func main() {
 	)
 	symbol := [...]string{USD: "$", EUR: "€", GBP: "£", RMB: "¥"}
 	fmt.Println(RMB, symbol[RMB])
+	// Another example of the usage of the ...
+	r := [...]int{1: -1, 2: -2}
+	for _, k := range r {
+		fmt.Println(k)
+	}
+	r[2] = 25
+	for _, k := range r {
+		fmt.Println(k)
+	}
 }
